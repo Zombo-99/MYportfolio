@@ -6,7 +6,7 @@ import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 
 export function Sati(props) {
-  const { nodes, materials } = useGLTF('/public/models/Sati.glb')
+  const { nodes, materials } = useGLTF('/public/Sati.glb')
   return (
     <group {...props} dispose={null}>
       <mesh
@@ -43,5 +43,5 @@ export function Sati(props) {
   )
 }
 
-useGLTF.preload('/public/models/Sati.glb')
+useGLTF.preload('/public/Sati.glb')
 

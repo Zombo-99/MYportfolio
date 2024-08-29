@@ -6,7 +6,7 @@ import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 
 export function Airplane(props) {
-  const { nodes, materials } = useGLTF('/public/models/SpaceShip.glb')
+  const { nodes, materials } = useGLTF('/public/SpaceShip.glb')
   return (
     <group {...props} dispose={null}>
       <group rotation={[Math.PI / 2,0, Math.PI / 2]} scale={50}>
@@ -33,5 +33,5 @@ export function Airplane(props) {
   )
 }
 
-useGLTF.preload('/public/models/SpaceShip.glb')
+useGLTF.preload('/public/SpaceShip.glb')
 

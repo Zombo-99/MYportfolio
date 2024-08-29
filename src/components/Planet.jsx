@@ -6,7 +6,7 @@ import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 
 export function Planet(props) {
-  const { nodes, materials } = useGLTF('/public/models/Neptune.glb')
+  const { nodes, materials } = useGLTF('/public/Neptune.glb')
   return (
     <group {...props} dispose={null}>
       <mesh
@@ -31,5 +31,5 @@ export function Planet(props) {
   )
 }
 
-useGLTF.preload('/public/models/Neptune.glb')
+useGLTF.preload('/public/Neptune.glb')
 

@@ -6,7 +6,7 @@ import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 
 export function Space(props) {
-  const { nodes, materials } = useGLTF('/public/models/spa.glb')
+  const { nodes, materials } = useGLTF('/public/spa.glb')
   return (
     <group {...props} dispose={null}>
       <mesh
@@ -19,5 +19,5 @@ export function Space(props) {
   )
 }
 
-useGLTF.preload('/public/models/spa.glb')
+useGLTF.preload('/public/spa.glb')
 
