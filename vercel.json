@@ -1,6 +1,12 @@
-
 {
+    "builds": [
+      {
+        "src": "public/**/*",
+        "use": "@vercel/static"
+      }
+    ],
     "rewrites": [
-      { "source": "/(.*)", "destination": "/" }
+      { "source": "/models/(.*)", "destination": "/models/$1" }
     ]
   }
+  
