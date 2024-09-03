@@ -1,8 +1,6 @@
 import { useEffect, useState } from "react";
 import { useProgress } from "@react-three/drei";
 import { usePlay } from "../contexts/Play";
-import { SocialIcon } from "react-social-icons";
-import 'react-social-icons/github';
 
 
 export const Overlay = () => {
